@@ -23,7 +23,7 @@ It can be also used as a detector of infra light intensity modulation.
 
 ## About the electrical design
 
-I plan to describe:
+I plan to describe here:
    - how filters are calculated
    - what are the individual parts of the circuit and how do they work
    - what signals are on the TestPoints
