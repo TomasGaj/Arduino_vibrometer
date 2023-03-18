@@ -1,4 +1,4 @@
-# Arduino Uno vibrometer
+# Arduino UNO vibrometer
 
 ## General Introduction
 
