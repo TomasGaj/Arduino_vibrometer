@@ -1,5 +1,7 @@
 # Arduino UNO vibrometer
 
+![final_version_tested_working_small](photos/final_version_tested_working_small.png)
+
 ## General Introduction
 
 It's expansion board for Arduino UNO.
@@ -29,6 +31,7 @@ Shortly: You can get analog output from TestPoint 5 and GND is TestPoint 6.
 
 ## Next steps
 
+  - testing and testing...
   - speed up Arduino code
   - eliminate 9V battery
   - finish C# app
