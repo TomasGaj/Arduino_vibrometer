@@ -2,6 +2,8 @@
 
 ![final_version_tested_working_small](photos/final_version_tested_working_small.png)
 
+![detail of real measurement](photos/detail_of_real_measurement.png)
+
 ## General Introduction
 
 It's expansion board for Arduino UNO.
@@ -23,12 +25,17 @@ It can be also used as a detector of infra light intensity modulation.
 
 ## About the electrical design
 
-I am going to sleep and I plan to describe here:
-   - how filters are calculated
-   - what are the individual parts of the circuit and how do they work
-   - what signals are on the TestPoints
-Shortly: You can get analog output from TestPoint 5 and GND is TestPoint 6.
-
+   - high pass filter is calculater fc = 4.82 Hz
+   - high pass is also removing away DC part of the signal
+   - low pass is calculated fc = 796 Hz
+   - everythnig above 200Hz looks ugly with actual speed of data acqusition speed
+   - TestPoint 1 - direct output from phototransistor (proportional to light intensity)
+   - TestPoint 2 - voltage after high pass filter
+   - TestPoint 3 - voltage after low pass filter
+   - TestPoint 4 - voltage after amplification
+   - TestPoint 5 is signal just 
+   - TestPoint 6 is Ground
+   
 ## Next steps
 
   - testing and testing...
@@ -36,8 +43,12 @@ Shortly: You can get analog output from TestPoint 5 and GND is TestPoint 6.
   - eliminate 9V battery
   - finish C# app
   - thinking about ARM processor (now testing RPi)
-  - thinking about more complicated physical principle (planning modulation tests, reading about self-mixing)
+  - thinking about more complicated physical principle (planning intensity modulation tests, reading about self-mixing)
  
+ 
+**More about testing and other details:**
+
+[sensorsplayground.com](http://www.sensorsplayground.com/)
 
 Enjoy!
 
