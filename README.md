@@ -27,7 +27,7 @@ It can be also used as a detector of infra light intensity modulation.
    - high pass filter is calculater fc = 4.82 Hz
    - high pass is also removing away DC part of the signal
    - low pass is calculated fc = 796 Hz
-   - everythnig above 200Hz looks ugly with actual speed of data acqusition speed
+   - everythnig above 200Hz looks ugly with actual data acqusition speed
    - TestPoint 1 - direct output from phototransistor (proportional to light intensity)
    - TestPoint 2 - voltage after high pass filter
    - TestPoint 3 - voltage after low pass filter
