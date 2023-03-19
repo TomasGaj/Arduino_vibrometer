@@ -32,8 +32,8 @@ It can be also used as a detector of infra light intensity modulation.
    - TestPoint 2 - voltage after high pass filter
    - TestPoint 3 - voltage after low pass filter
    - TestPoint 4 - voltage after amplification
-   - TestPoint 5 is signal before entering ADC
-   - TestPoint 6 is Ground
+   - TestPoint 5 - signal before entering ADC
+   - TestPoint 6 - ground
    
 ## Next steps
 
