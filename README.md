@@ -1,4 +1,4 @@
-# Arduino UNO vibrometer
+# Arduino UNO infrared vibrometer
 
 ![final_version_tested_working_small](photos/final_version_tested_working_small.png)
 
