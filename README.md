@@ -29,6 +29,8 @@ I modified the original code, I am sending out data in this format:
 
 **ADC value** (hex, 10-bit adc) **SPACE COUNTER** (hex, result of Arduino function ***micros()***)
 
+![Arduino code output](photos/Ardu_code_output.PNG)
+
 ## Electrical circuit
 **Signal path:**
 
