@@ -27,7 +27,7 @@ I use this SW library:
 
 I modified the original code, I am sending out data in this format:
 
-**ADC value** (hex, 10-bit adc) **SPACE COUNTER** (hex, result of Arduino function ***micros()***)
+**ADC VALUE** (hex, 10-bit adc) ***(space between adc value and counter)*** **COUNTER** (hex, result of Arduino function ***micros()***)
 
 ![Arduino code output](photos/Ardu_code_output.PNG)
 
@@ -35,6 +35,10 @@ I modified the original code, I am sending out data in this format:
 **Signal path:**
 
 Signal -> High pass filter -> Low pass filter -> Amplifier -> Level shifter -> ADC (here MCP3008) -> Arduino Uno
+
+![circuit](photos/circuit.png)
+
+![board](photos/board.png)
 
 **My electrical design is inspired by:**
 
