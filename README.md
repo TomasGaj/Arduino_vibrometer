@@ -8,26 +8,44 @@
 
 It's expansion board for Arduino UNO.
 Vibrometer is based on TCRT5000 IR sensor and MCP3008 adc.
-KiCAD 6.0 was used.
+I used KiCAD 6.0.
 It's tested and working.
 Arduino is used only to send out ADC values together with time stamps.
 C# application is coming.
-I was not able to eliminate noise in USB supply (50 Hz), so I use additional 9V battery.
+Up to now I was not able to eliminate noise comping from USB supply (50 Hz), so I use 9V battery to supply power to the circuit.
 
-## About the physical principle
+## Physical principle
 
 It's light intensity distance sensor. The closer the object is, the more light is reflected back to phototransistor.
-However, the correct distance can not be measured without calibration. This will be solved later (I hope :-)
+However, the correct distance of vibrating object can not be measured without calibration. I hope I'll solve later.
 Working distance is few cm.
-It can be also used as a detector of infra light intensity modulation.
-(for example you can measure what frequency has lamp on your table in the office ;-)
 
-## About the electrical design
+## Arduino code
 
+I use this SW library:
+[Fast MCP3008 library for Arduino Uno](https://github.com/arithmechanics/fast-MCP3008)
+
+I modified the original code, I am sending out data in this format:
+
+**ADC value** (hex, 10-bit adc) **SPACE COUNTER** (hex, result of Arduino function ***micros()***)
+
+## Electrical circuit
+**Signal path:**
+
+Signal -> High pass filter -> Low pass filter -> Amplifier -> Level shifter -> ADC (here MCP3008) -> Arduino Uno
+
+**My electrical design is inspired by:**
+
+[Matiss Malahs - Design of a Low Cost Laser Vibrometer System](https://www.theseus.fi/handle/10024/89919)
+
+[Heart Rate Measurement using PPG](http://www.ee.iitb.ac.in/~stallur/wp-content/uploads/2017/02/Heart-Rate-Measurement-using-PPG1.pdf)
+
+## Details of the electrical circuit
+I needed to do adjustments:
    - high pass filter is calculater fc = 4.82 Hz
    - high pass is also removing away DC part of the signal
    - low pass is calculated fc = 796 Hz
-   - everythnig above 200Hz looks ugly with actual data acqusition speed
+   - **everythnig above 200Hz looks ugly with actual data acqusition speed**
    - TestPoint 1 - direct output from phototransistor (proportional to light intensity)
    - TestPoint 2 - voltage after high pass filter
    - TestPoint 3 - voltage after low pass filter
@@ -52,3 +70,5 @@ It can be also used as a detector of infra light intensity modulation.
 Enjoy!
 
 Tomas Gajdarus
+
+tomas (dot) gajdarus (at) seznam (dot) cz
