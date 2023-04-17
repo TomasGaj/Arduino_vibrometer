@@ -14,6 +14,8 @@ Arduino is used only to send out ADC values together with time stamps.
 C# application is coming.
 Up to now I was not able to eliminate noise comping from USB supply (50 Hz), so I use 9V battery to supply power to the circuit.
 
+![blocks](photos/blocks.PNG)
+
 ## Physical principle
 
 It's light intensity distance sensor. The closer the object is, the more light is reflected back to phototransistor.
