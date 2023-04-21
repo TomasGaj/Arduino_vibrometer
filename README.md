@@ -22,6 +22,8 @@ It's light intensity distance sensor. The closer the object is, the more light i
 However, the correct distance of vibrating object can not be measured without calibration. I hope I'll solve later.
 Working distance is few cm.
 
+![measurement.overview](photos/measurement.overview.PNG)
+
 ## Arduino code
 
 I use this SW library:
