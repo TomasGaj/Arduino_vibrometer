@@ -70,6 +70,7 @@ I needed to do adjustments:
   - thinking about ARM processor (now testing RPi)
   - thinking about more complicated physical principle (planning intensity modulation tests, reading about self-mixing)
  
+ ![C#](photos/C.sharp.PNG)
  
 **More about testing and other details:**
 
