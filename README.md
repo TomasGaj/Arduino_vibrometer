@@ -20,7 +20,7 @@ Up to now I was not able to eliminate noise comping from USB supply (50 Hz), so 
 
 It's light intensity distance sensor. The closer the object is, the more light is reflected back to phototransistor.
 However, the correct distance of vibrating object can not be measured without calibration. I hope I'll solve later.
-Working distance is few cm.
+Working distance is 15-25 mm.
 
 ![measurement.overview](photos/measurement.overview.PNG)
 
