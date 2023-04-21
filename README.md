@@ -14,7 +14,7 @@ Arduino is used only to send out ADC values together with time stamps.
 C# application is coming.
 Up to now I was not able to eliminate noise comping from USB supply (50 Hz), so I use 9V battery to supply power to the circuit.
 
-![blocks](photos/blocks.PNG)
+![blocks](photos/blocks2.PNG)
 
 ## Physical principle
 
@@ -29,7 +29,7 @@ I use this SW library:
 
 I modified the original code, I am sending out data in this format:
 
-**ADC VALUE** (hex, 10-bit adc) ***(space between adc value and counter)*** **COUNTER** (hex, result of Arduino function ***micros()***)
+**ADC VALUE** (hex, 10-bit adc) ***(space between adc value and counter)*** **MICRO-SECONDS** (hex, result of Arduino function ***micros()***)
 
 ![Arduino code output](photos/Ardu_code_output.PNG)
 
