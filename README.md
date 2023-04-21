@@ -1,4 +1,4 @@
-# Arduino UNO infrared vibrometer
+# Arduino UNO contactless vibrometer
 
 ![final_version_tested_working_small](photos/final_version_tested_working_small.png)
 
@@ -29,9 +29,9 @@ I use this SW library:
 
 I modified the original code, I am sending out data in this format:
 
-**ADC VALUE** (hex, 10-bit adc) ***(space between adc value and counter)*** **MICRO-SECONDS** (hex, result of Arduino function ***micros()***)
+**ADC VALUE** (hex, 10-bit adc) ***(space)*** **MICRO-SECONDS** (hex, result of Arduino function ***micros()***)
 
-![Arduino code output](photos/Ardu_code_output.PNG)
+![Arduino code output](photos/Ardu_code_output2.PNG)
 
 ## Electrical circuit
 **Signal path:**
