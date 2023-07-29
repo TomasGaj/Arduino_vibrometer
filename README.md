@@ -4,6 +4,9 @@
 
 ![detail of real measurement](photos/detail_of_real_measurement.png)
 
+**UPDATE 29-07-2023: I've squized Arduino and MPC3008 to the maximum, in the meanwhile
+I didn't continue in C# as I optimized Arduino otput data format, see:** [Arduino_Nano_MPC3008_logger](https://github.com/TomasGaj/Arduino_Nano_MPC3008_logger)
+
 ## General Introduction
 
 It's expansion board for Arduino UNO.
